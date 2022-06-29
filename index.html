@@ -23,9 +23,30 @@
       margin-top: 1em;
       border-radius: 1em;
     }
+    .grandparent {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+    }
+    .parent {
+      width: 130px;
+      height: 130px;
+      background-color: blue;
+    }
+    .child {
+      width: 60px;
+      height: 60px;
+      background-color: green;
+    }
   </style>
 </head>
 <body>
+  <!-- Delegation -->
+  <div class="grandparent">
+    <div class="parent">
+      <div class="child"></div>
+    </div>
+  </div>
   <!-- innerHTML is SLOW -->
   <!-- <main>
     <section>
@@ -48,10 +69,10 @@
   </main> -->
 
   <!-- Throttle -->
-  <main>
+  <!-- <main>
     <button id="throttle">Throttle</button>
-  </main>
+  </main> -->
 
-  <script src="./js/15-Throttle/main..js"></script>
+  <script src="./js/0-Delegation/main..js"></script>
 </body>
 </html>
